@@ -21,11 +21,6 @@ return {
         },
       }
     end,
-    config = function()
-      require("vimwiki").setup {
-        -- Configuration here, or leave empty to use defaults
-        --
-      }
-    end,
+    config = function() end,
   },
 }
