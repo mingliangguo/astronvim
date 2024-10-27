@@ -1,3 +1,16 @@
+-- Some references I used for this config:
+-- - [Setting up VimWiki in Neovim ](https://blog.mauromotion.com/pkm/vim/2023/09/29/vimwiki-setup-in-neovim.html)
+--   - syntax highlight config
+--   - cheatsheet for keyboard shortcuts
+-- - useful shortcuts
+--   - update diary index: `<leader> w <leader> i`
+--   - open vimwiki: `<leader> ww`
+--   - open vimwiki diary: `<leader> wi`
+--   - update diary today: `<leader> w <leader> w`
+--   - Telescope: search VimWiki’s notes titles: `<leader> fv`
+--   - Telescope: live grep inside VimWiki directory: `<leader> fw`
+
+
 return {
   {
     "vimwiki/vimwiki",
@@ -30,6 +43,7 @@ return {
 		      ["```html"] = { parser = "html" },
 		      ["```css"] = { parser = "css" },
 		      ["```c"] = { parser = "c" },
+		      ["```java"] = { parser = "java" },
 	      },
       }
 
