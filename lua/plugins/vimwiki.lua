@@ -61,8 +61,8 @@ return {
       vim.g.indentLine_conceallevel = 2 -- indentline controlls concel
       --vim.set.o.conceallevel = 1 -- so that I can see `` and full urls in markdown files
 
-      vim.api.nvim_set_keymap("n", "<F3>", ":VimwikiDiaryPrevDay<CR>", { noremap = true, silent = true, nowait = true })
-      vim.api.nvim_set_keymap("n", "<F4>", ":VimwikiDiaryNextDay<CR>", { noremap = true, silent = true, nowait = true })
+      -- vim.api.nvim_set_keymap("n", "<F3>", ":VimwikiDiaryPrevDay<CR>", { noremap = true, silent = true, nowait = true })
+      -- vim.api.nvim_set_keymap("n", "<F4>", ":VimwikiDiaryNextDay<CR>", { noremap = true, silent = true, nowait = true })
     end,
     config = function() end,
   },
