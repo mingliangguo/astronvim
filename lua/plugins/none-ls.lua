@@ -46,14 +46,10 @@ return {
           }
         end,
       },
-    }
-
-    vim.keymap.set("n", "<leader>cf", vim.lsp.buf.format, {})
-  end,
-
       null_ls.builtins.formatting.biome.with {
         condition = function(utils) return utils.root_has_file "biome.json" end,
       },
     })
   end,
+  vim.keymap.set("n", "<leader>cf", vim.lsp.buf.format, {}),
 }
