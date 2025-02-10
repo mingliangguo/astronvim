@@ -16,6 +16,25 @@ return {
       -- Set a formatter
       null_ls.builtins.formatting.stylua,
       null_ls.builtins.formatting.prettier.with {
+        filetypes = {
+          "javascript",
+          "javascriptreact",
+          "typescript",
+          "typescriptreact",
+          "vue",
+          "css",
+          "scss",
+          "less",
+          "html",
+          "json",
+          "jsonc",
+          "yaml",
+          "markdown",
+          "markdown.mdx",
+          "graphql",
+          "handlebars",
+        },
+        extra_filetypes = { "toml", "svelte" },
         condition = function(utils)
           return utils.root_has_file {
             ".prettierrc",
@@ -27,6 +46,11 @@ return {
           }
         end,
       },
+    }
+
+    vim.keymap.set("n", "<leader>cf", vim.lsp.buf.format, {})
+  end,
+
       null_ls.builtins.formatting.biome.with {
         condition = function(utils) return utils.root_has_file "biome.json" end,
       },
