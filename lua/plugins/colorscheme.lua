@@ -1,8 +1,8 @@
 return {
-  "catppuccin/nvim",
+  "EdenEast/nightfox.nvim",
   priority = 1000,
   config = function()
     vim.opt.termguicolors = true
-    vim.cmd.colorscheme "catppuccin"
+    vim.cmd.colorscheme "nightfox"
   end,
 }
