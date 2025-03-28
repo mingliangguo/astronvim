@@ -14,7 +14,7 @@ return {
   {
     "vimwiki/vimwiki",
     dependencies = {
-      "ElPiloto/telescope-vimwiki.nvim",
+--      "ElPiloto/telescope-vimwiki.nvim",
     },
     version = "*", -- Use for stability; omit to use `main` branch for the latest features
     init = function()
@@ -69,10 +69,10 @@ return {
       vim.g.indentLine_conceallevel = 2 -- indentline controlls concel
       --vim.set.o.conceallevel = 1 -- so that I can see `` and full urls in markdown files
       --
-      require("telescope").load_extension "vw"
-      vim.keymap.set("n", "<leader>vww", require("telescope").extensions.vimwiki.vimwiki, {})
-      vim.keymap.set("n", "<leader>vwg", require("telescope").extensions.vimwiki.live_grep, {})
-
+      -- require("telescope").load_extension "vw"
+      -- vim.keymap.set("n", "<leader>vww", require("telescope").extensions.vimwiki.vimwiki, {})
+      -- vim.keymap.set("n", "<leader>vwg", require("telescope").extensions.vimwiki.live_grep, {})
+      --
       -- vim.api.nvim_set_keymap("n", "<F3>", ":VimwikiDiaryPrevDay<CR>", { noremap = true, silent = true, nowait = true })
       -- vim.api.nvim_set_keymap("n", "<F4>", ":VimwikiDiaryNextDay<CR>", { noremap = true, silent = true, nowait = true })
     end,
