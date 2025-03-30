@@ -27,6 +27,7 @@ return {
         blink_cmp = true,
         which_key = true,
         nvim_surround = true,
+        vimwiki = true,
       },
     })
     vim.cmd.colorscheme("catppuccin")
